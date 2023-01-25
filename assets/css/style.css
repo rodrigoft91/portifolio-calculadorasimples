@@ -1,0 +1,106 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+
+    width: 100vw;
+    height: 100vh;
+    background: rgb(35, 102, 122);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'inter', sans-serif;
+    overflow: hidden;
+
+}
+
+.container {
+
+    width: 40vw;
+    border-radius: 15px;
+    background-color: white;
+
+}
+
+.titulo {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.icones {
+
+    font-size: 0.7rem;
+}
+
+.formularios {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin: 0 0 0.5rem 0;
+}
+
+h1 {
+
+    color: black;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+    color: rgb(85, 167, 192);
+
+}
+
+.resultado {
+    text-align: center;
+    color: rgb(85, 167, 192);
+    padding: 1rem;
+}
+
+input {
+
+    width: 10vw;
+    height: 4vh;
+    border: 1px solid rgb(85, 167, 192);
+    color: rgb(85, 167, 192);
+    border-radius: 0.3rem;
+    text-align: center;
+}
+
+.botoes {
+    background-color: transparent;
+    text-transform: uppercase;
+    font-size: 0.6rem;
+    cursor: pointer;
+}
+
+.botoes:hover {
+
+    background-color: rgb(35, 102, 122);
+    color: #FFFFFF;
+    transition: .30s;
+
+}
+
+
+@media screen and (max-width: 720px) {
+
+    .container {
+        width: 90vw;
+        padding: 1rem;
+    }
+
+    input {
+        width: 20vw;
+        height: 4vh;
+
+    }
+
+    .formularios {
+        width: 90vw;
+    }
+
+}

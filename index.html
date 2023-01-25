@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <title>Calculadora simples</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1 class="titulo">Calculadora Simples <i class="fa-solid fa-calculator"></i></h1>
+
+        <div class="caixa-form">
+
+            <div class="formularios">
+
+
+                <input type="number" id="txt1">
+                <i class="fa-solid fa-plus icones"></i>
+                <input type="number" id="txt2">
+                <input type="button" class="botoes" value="somar" onclick="somar()">
+
+
+            </div>
+
+            <div class="formularios">
+
+                <input type="number" id="txt1sub1">
+                <i class="fa-solid fa-minus icones"></i>
+                <input type="number" id="txt2sub2">
+                <input type="button" class="botoes" value="subtrair" onclick="subtrair()">
+
+            </div>
+
+            <div class="formularios">
+
+                <input type="number" id="txt1mult1">
+                <i class="fa-solid fa-xmark icones"></i>
+                <input type="number" id="txt2mult2">
+                <input type="button" class="botoes" value="multiplicar" onclick="multiplicar()">
+
+
+            </div>
+
+            <div class="formularios">
+
+                <input type="number" id="txt1div1">
+                <i class="fa-solid fa-divide icones"></i>
+                <input type="number" id="txt2div2">
+                <input type="button" class="botoes" value="dividir" onclick="dividir()">
+
+            </div>
+
+            <div id="resultado" class="resultado">Resultado</div>
+
+        </div>
+
+
+
+    </div>
+
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
